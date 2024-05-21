@@ -194,6 +194,11 @@ button {
   }
 }
 
+.navbar-active {
+  background: linear-gradient(45deg, #80E8DD, #7CC2F6, #AF81E4, #E784BA, #F9C1A0, #B7F6AF, #80E8DD);
+  border-radius: 100px;
+}
+
 .nav-active {
   right: 0;
 }
@@ -227,7 +232,7 @@ nav .item-wrapper ul {
   font-size: 1rem;
 }
 nav .item-wrapper ul li {
-  padding: 1rem;
+  padding: 0.5rem 1.2rem;
 }
 nav .hamburger,
 nav .close {

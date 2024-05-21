@@ -187,6 +187,11 @@ button {
   right: 0;
 }
 
+.navbar-active {
+  background: linear-gradient(45deg, #80E8DD, #7CC2F6, #AF81E4, #E784BA, #F9C1A0, #B7F6AF, #80E8DD);
+  border-radius: 100px;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -216,8 +221,9 @@ nav .item-wrapper ul {
   font-size: 1rem;
 }
 nav .item-wrapper ul li {
-  padding: 1rem;
+  padding: 0.5rem 1.2rem;
 }
+
 nav .hamburger, nav .close {
   padding: var(--spacing-s);
   height: 2rem;
@@ -249,6 +255,10 @@ nav .close {
   }
 }
 @media (max-width: 1130px) {
+  .navbar-active{
+    background: none;
+  }
+  
   nav .hamburger, nav .close {
     display: block;
   }
@@ -891,10 +901,13 @@ footer .bottom .right .logo img {
   left: 1000%;
 }
 .register form .choice {
-  padding: 0.5rem;
-  border-radius: 5px;
+  padding: 0.5rem 1.7rem;
+  border-radius: 100px;
   cursor: pointer;
+  border-style: solid;
+  border-width: 1.5px;
 }
+
 .register form button {
   display: block;
 }
@@ -909,6 +922,10 @@ footer .bottom .right .logo img {
   border: none;
   margin: 3rem auto;
   font-weight: bold;
+  border-style: solid;
+  /* border-image: linear-gradient(#AF81E4, #E784BA) 10; */
+  /* border-color: -moz-linear-gradient(top, #fff, #fff); */
+  border-width: 1.5px;
 }
 
 .description-competition .img-wrapper {
