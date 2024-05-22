@@ -190,6 +190,7 @@ button {
 .navbar-active {
   background: linear-gradient(45deg, #80E8DD, #7CC2F6, #AF81E4, #E784BA, #F9C1A0, #B7F6AF, #80E8DD);
   border-radius: 100px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
 
 nav {
@@ -234,6 +235,13 @@ nav .hamburger, nav .close {
 nav .close {
   margin-top: 1.5rem;
 }
+
+nav .item-wrapper ul li:hover {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}  
+
 @media (min-width: 320px) {
   nav {
     padding: 0 2rem;
@@ -257,6 +265,7 @@ nav .close {
 @media (max-width: 1130px) {
   .navbar-active{
     background: none;
+    box-shadow: none;
   }
   
   nav .hamburger, nav .close {
@@ -703,6 +712,7 @@ footer .bottom .right .logo img {
   border-radius: 10px;
   border: none;
   margin: 3rem auto;
+  font-weight: bold;
 }
 .hero-techtalk button::before {
   content: "";
@@ -904,14 +914,15 @@ footer .bottom .right .logo img {
   padding: 0.5rem 1.7rem;
   border-radius: 100px;
   cursor: pointer;
-  border-style: solid;
-  border-width: 1.5px;
+  /* border-style: solid; */
+  /* border-width: 1.5px; */
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
 
 .register form button {
   display: block;
 }
-.register form .submit {
+/* .register form .submit {
   position: relative;
   background-image: var(--gradient-horizontal);
   color: var(--color-text);
@@ -924,9 +935,41 @@ footer .bottom .right .logo img {
   font-weight: bold;
   border-style: solid;
   /* border-image: linear-gradient(#AF81E4, #E784BA) 10; */
-  /* border-color: -moz-linear-gradient(top, #fff, #fff); */
+  /* border-color: linear-gradient(45deg, #80E8DD, #7CC2F6, #AF81E4, #E784BA, #F9C1A0, #B7F6AF, #80E8DD);
   border-width: 1.5px;
+} */
+
+.register form .submit {
+  position: relative;
+  /* background-image: var(--gradient-horizontal); */
+  color: var(--color-text);
+  width: 10rem;
+  height: 3rem;
+  font-size: var(--font-size-l);
+  border-radius: 10px;
+  border: none;
+  margin: 3rem auto;
+  font-weight: bold;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
+
+.register form .submit::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 10px; /* Sama dengan border-radius dari tombol */
+  padding: 3px; /* Lebar border */
+  background: linear-gradient(45deg, #80E8DD, #7CC2F6, #AF81E4, #E784BA, #F9C1A0, #B7F6AF, #80E8DD);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude; /* Untuk Firefox */
+  z-index: -1;
+}
+
 
 .description-competition .img-wrapper {
   margin: 5rem auto;
@@ -1401,6 +1444,7 @@ footer .bottom .right .logo img {
   border-radius: 10px;
   border: none;
   margin: 1rem auto;
+  font-weight: bold;
 }
 .hero-competition button::before {
   content: "";
