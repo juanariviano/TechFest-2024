@@ -629,6 +629,30 @@ footer .top .right ul {
   font-size: var(--font-size-l);
   padding: 0;
 }
+footer .top .right .contact {
+  display: flex;
+  gap: var(--spacing-m);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+footer .top .right .contact a {
+  background-image: linear-gradient(#C5A0D4, #8566FA);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+footer .top .right .contact a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 footer .bottom {
   display: flex;
   justify-content: space-between;
@@ -862,7 +886,32 @@ footer .bottom .right .logo img {
   border-radius: 10px;
   position: relative;
   background-color: var(--color-background);
+  /* text-align: center; */
 }
+
+.register h1 {
+  font-family: "Atmospheric", sans-serif;
+  font-size: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: var(--spacing-l) auto;
+}
+.register form {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  max-width: 40rem;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  background-color: var(--color-background);
+  /* text-align: center; */
+}
+
+#compe-regist {
+  text-align: center;
+} 
+
+
 .register form::before {
   content: "";
   position: absolute;
