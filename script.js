@@ -306,9 +306,87 @@ document.addEventListener("DOMContentLoaded", function() {
     }catch (error){
         console.log(error)
     }
-
-
-
-
-
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const fadeInElements = document.querySelectorAll(".hero-text h1, .hero-text h3, .hero-text p, .about-section .location .time + p, .techtalk .description h1, .techtalk .description p, .competition .description h1, .competition .description p");
+
+    fadeInElements.forEach((element, index) => {
+        setTimeout(() => {
+            element.classList.add("fade-in");
+        }, index * 200);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const fadeInElements = document.querySelectorAll(
+      ".decorator img, .nav .logo-wrapper img, .nav .item-wrapper ul li, .header-about h1, .header-about h3, .description-about .description .content h1, .description-about .description .content p, .description-about .description .content-img img, .footer .top .left img, .footer .top .right .quick-link ul li, .footer .top .right .info ul li, .footer .top .right .contact a img, .footer .bottom .left p, .footer .bottom .right .logo img"
+    );
+  
+    fadeInElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("fade-in");
+      }, index * 30);
+    });
+  });
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeInElements = document.querySelectorAll(
+      ".decorator img, .nav .logo-wrapper img, .nav .item-wrapper ul li, .hero-techtalk h1, .description-competition .img-wrapper img, .description-competition .description .content h1, .description-competition .description .content p, .description-competition .description .content-img img, .partner h1, .partner .img-wrapper img, footer .top .left img, footer .top .right .quick-link ul li, footer .top .right .info ul li, footer .top .right .contact a img, footer .bottom .left p, footer .bottom .right .logo img"
+    );
+  
+    fadeInElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("fade-in");
+      }, index * 30); 
+    });
+  });
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeInElements = document.querySelectorAll(
+      ".decorator img, .nav .logo-wrapper img, .nav .item-wrapper ul li, .hero-competition h1, .hero-competition p, .rank-competition .img-wrapper img, .rank-competition h2, .timeline-competition h1, .timeline-competition .wrapper .content p, .timeline-competition .wrapper .content h2, .info-competition h2, .info-competition p, .partner h1, .partner .img-wrapper img, footer .top .left img, footer .top .right .quick-link ul li, footer .top .right .info ul li, footer .top .right .contact a img, footer .bottom .left p, footer .bottom .right .logo img"
+    );
+  
+    fadeInElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("fade-in");
+      }, index * 20);
+    });
+  });
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeInElements = document.querySelectorAll(
+      ".decorator img, .nav .logo-wrapper img, .nav .item-wrapper ul li, .faq-title h1, .faq-title .sub-title, .card"
+    );
+  
+    fadeInElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("fade-in");
+      }, index * 50);
+    });
+  });
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeInElements = document.querySelectorAll(
+      ".decorator img, .nav .logo-wrapper img, .nav .item-wrapper ul li, .faq-title h1, .faq-title .sub-title, .card, .register h1"
+    );
+  
+    fadeInElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("fade-in");
+      }, index * 30);
+    });
+  });  
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeInElements = document.querySelectorAll(
+      ".decorator img, .nav .logo-wrapper img, .nav .item-wrapper ul li, .register h1, .question p, .question input, .question select, footer p"
+    );
+  
+    fadeInElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("fade-in");
+      }, index * 30);
+    });
+  });
+  

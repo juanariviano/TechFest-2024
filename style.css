@@ -350,6 +350,7 @@ nav .item-wrapper ul li:hover {
   min-height: 3rem;
   font-weight: bold;
   color: var(--color-text);
+  transition: all 0.3s ease-in-out;
 }
 .hero-section .hero-text .cta-group .cta-explore {
   background-color: transparent;
@@ -435,6 +436,7 @@ nav .item-wrapper ul li:hover {
   font-size: var(--font-size-l);
   border-radius: 10px;
   border: none;
+  transition: all 0.3s ease-in-out;
 }
 .about-section .location .timer a button::before {
   content: "";
@@ -493,6 +495,7 @@ nav .item-wrapper ul li:hover {
   font-weight: bold;
   color: var(--color-text);
   background-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .techtalk, .competition {
@@ -672,6 +675,18 @@ footer .bottom .right .logo img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (max-width: 600px) {
+  footer .top .right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  footer .top .right .contact {
+    margin-top: 2rem;
+  }
+}
+
 .quick-link ul a li {
   font-weight: 1000;
 }
@@ -758,6 +773,7 @@ footer .bottom .right .logo img {
   border: none;
   margin: 3rem auto;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 .hero-techtalk button::before {
   content: "";
@@ -907,7 +923,10 @@ footer .bottom .right .logo img {
   border-radius: 10px;
   position: relative;
   background-color: var(--color-background);
-  /* text-align: center; */
+}
+
+.button-register {
+  transition: all 0.3s ease-in-out;
 }
 
 .register h1 {
@@ -1023,6 +1042,7 @@ footer .bottom .right .logo img {
   overflow: hidden;
   z-index: 1;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
 }
 
 .register form .submit::before {
@@ -1120,6 +1140,7 @@ footer .bottom .right .logo img {
   border-radius: 10px;
   border: none;
   margin: 3rem auto;
+  transition: all 0.3s ease-in-out;
 }
 
 .techexpo-button button::before {
@@ -1459,6 +1480,7 @@ footer .bottom .right .logo img {
   border-radius: 10px;
   border: none;
   margin: 0 auto;
+  transition: all 0.3s ease-in-out;
 }
 .content button::before {
   content: "";
@@ -1496,12 +1518,24 @@ footer .bottom .right .logo img {
 }
 @media (max-width: 690px) {
   .hero-competition h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  .hero-competition h2 {
+    font-size: 1.5rem;
+  }
+  .hero-competition p {
+    font-size: 1rem;
   }
 }
 @media (max-width: 500px) {
   .hero-competition h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+  .hero-competition h2 {
+    font-size: 1rem;
+  }
+  .hero-competition p {
+    font-size: 0.75rem;
   }
 }
 .hero-competition button {
@@ -1515,6 +1549,7 @@ footer .bottom .right .logo img {
   border: none;
   margin: 1rem auto;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 .hero-competition button::before {
   content: "";
@@ -1812,6 +1847,7 @@ footer .bottom .right .logo img {
   border-radius: 10px;
   border: none;
   margin: 1rem auto;
+  transition: all 0.3s ease-in-out;
 }
 .information button::before {
   content: "";
@@ -1950,4 +1986,146 @@ footer .bottom .right .logo img {
   .header-about h1 {
     font-size: 3rem;
   }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+  animation-fill-mode: forwards;
+}
+
+.hero-text h1,
+.hero-text h3,
+.hero-text p,
+.about-section .location .time + p,
+.techtalk .description h1,
+.techtalk .description p,
+.competition .description h1,
+.competition .description p {
+  opacity: 0;
+}
+
+.decorator img,
+.nav .logo-wrapper img,
+.nav .item-wrapper ul li,
+.hero-techtalk h1,
+.description-competition .img-wrapper img,
+.description-competition .description .content h1,
+.description-competition .description .content p,
+.description-competition .description .content-img img,
+.partner h1,
+.partner .img-wrapper img,
+footer .top .left img,
+footer .top .right .quick-link ul li,
+footer .top .right .info ul li,
+footer .top .right .contact a img,
+footer .bottom .left p,
+footer .bottom .right .logo img {
+  opacity: 0;
+}
+
+.decorator img,
+.nav .logo-wrapper img,
+.nav .item-wrapper ul li,
+.hero-competition h1,
+.hero-competition p,
+.rank-competition .img-wrapper img,
+.rank-competition h2,
+.timeline-competition h1,
+.timeline-competition .wrapper .content p,
+.timeline-competition .wrapper .content h2,
+.info-competition h2,
+.info-competition p,
+.partner h1,
+.partner .img-wrapper img,
+footer .top .left img,
+footer .top .right .quick-link ul li,
+footer .top .right .info ul li,
+footer .top .right .contact a img,
+footer .bottom .left p,
+footer .bottom .right .logo img {
+  opacity: 0;
+}
+
+.decorator img,
+.nav .logo-wrapper img,
+.nav .item-wrapper ul li,
+.faq-title h1,
+.faq-title .sub-title,
+.card {
+  opacity: 0;
+}
+
+.decorator img,
+.nav .logo-wrapper img,
+.nav .item-wrapper ul li,
+.faq-title h1,
+.faq-title .sub-title,
+.card,
+.register h1 {
+  opacity: 0;
+}
+
+.decorator img,
+.nav .logo-wrapper img,
+.nav .item-wrapper ul li,
+.register h1,
+.question p,
+.question input,
+.question select,
+footer p {
+  opacity: 0;
+}
+
+/* Hover effects */
+.hero-section .hero-text .cta-group button:hover,
+.about-section .location .timer a button:hover,
+.techtalk .description a button:hover,
+.competition .description a button:hover,
+.hero-techtalk a button:hover,
+.content a button:hover,
+.hero-competition a button:hover,
+.information a button:hover,
+.button-register:hover,
+.techexpo-button button:hover,
+.register form .submit:hover  {
+  transform: scale(1.05);
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section .hero-text .cta-group .cta-explore:hover {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
+.hero-section .hero-text .cta-group .cta-register:hover {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
+@keyframes background-color-animation {
+  0% {
+    background-color: var(--color-background);
+  }
+  50% {
+    background-color: var(--color-primary);
+  }
+  100% {
+    background-color: var(--color-background);
+  }
+}
+
+.hero-section .hero-text .cta-group .cta-register:hover::before {
+  animation: background-color-animation 0.5s ease-in-out;
 }

@@ -27,6 +27,7 @@
     border: none;
     margin: 3rem auto;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
   
 .showcase-button button::before {
@@ -272,4 +273,9 @@
     .card .bottom .right h3{
         margin-right: -1.3rem;
     }
+}
+
+.showcase-button button:hover  {
+  transform: scale(1.05);
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
 }
