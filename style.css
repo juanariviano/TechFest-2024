@@ -672,6 +672,27 @@ footer .bottom .right .logo img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.quick-link ul a li {
+  font-weight: 1000;
+}
+
+.quick-link ul a li:hover {
+  color: white;
+  transition: 0.3s ease;
+}
+
+.info ul a li{
+  font-weight: 1000;
+}
+
+.info ul a li:hover{
+  color: white;
+  transition: 0.3s ease;
+}
+
+.bottom .left p{
+  font-weight: bold;
+}
 @media (min-width: 320px) {
   footer {
     padding: 0 1.5rem;

@@ -77,6 +77,25 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Form techtalk & compe
+
+    // techtalk non binusian region
+
+        document.querySelectorAll('.choice-techtalk-binusian').forEach(choice => {
+            choice.addEventListener('click', function() {
+                document.querySelectorAll('.choice-techtalk-binusian').forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+                const value = this.getAttribute('data-value');
+                if (value === 'Non-Binusian') {
+                    document.getElementById('region-question').style.display = 'none';
+                } else {
+                    document.getElementById('region-question').style.display = 'block';
+                }
+            });
+        });
+
+        // Optional: Set default active class and region visibility
+        document.querySelector('.choice-techtalk-binusian[data-value="Binusian"]').classList.add('active');
+        
     // Create choice-techtalk-binusian
     const choicesTechtalkBinusian = document.querySelectorAll('.choice-techtalk-binusian')
     handleSelection(choicesTechtalkBinusian, choicesTechtalkBinusian[0].textContent)
