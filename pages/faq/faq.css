@@ -81,7 +81,7 @@
     line-height: 1.5rem;
     font-family: 'Verdana';
     text-align: justify;
-    transition: max-height 1.5s ease;
+    transition: max-height 0.5s ease;
     font-size: 1.2rem;
 }
 
