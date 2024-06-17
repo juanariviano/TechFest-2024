@@ -676,15 +676,34 @@ footer .bottom .right .logo img {
      object-fit: contain;
 }
 @media screen and (max-width: 600px) {
+
+  footer .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
   footer .top .right {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 0;
   }
 
   footer .top .right .contact {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 15px;
   }
+
+  footer .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+
 }
 
 .quick-link ul a li {
@@ -839,7 +858,7 @@ footer .bottom .right .logo img {
   margin: var(--spacing-l) auto;
 }
 .speaker-techtalk .speaker-photo .details .img-wrapper {
-  background-color: var(--color-foreground);
+  background-color: white;
   padding: 1rem;
   border-radius: 10px;
   width: 20rem;
@@ -1398,7 +1417,7 @@ footer .bottom .right .logo img {
 
 @media (max-width:500px){
   .techexpo-header h1{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 
@@ -1407,11 +1426,12 @@ footer .bottom .right .logo img {
   }
 
   .techexpo-content .description .left .title{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .techexpo-content .description .left p{
-    font-size: 1.1rem;
+    font-size: 0.8rem;
+    padding: 0 20px;
   }
 
   .techexpo-img .img .top .first, .techexpo-img .bottom .third{
@@ -1541,7 +1561,7 @@ footer .bottom .right .logo img {
 }
 @media (max-width: 500px) {
   .hero-competition h1 {
-    font-size: 2rem;
+    font-size: 2px;
   }
   .hero-competition h2 {
     font-size: 1rem;
